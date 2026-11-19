@@ -41,7 +41,7 @@ export interface ProgressData {
 }
 
 export class SahaayaApiClient {
-  private static baseUrl = '/api/v1';
+  private static baseUrl = (import.meta.env?.VITE_API_BASE_URL as string) || '/api/v1';
 
   private static async request<T>(endpoint: string, options: RequestInit = {}): Promise<T> {
     const url = `${this.baseUrl}${endpoint}`;
@@ -303,9 +303,11 @@ export class SahaayaApiClient {
     } catch {
       const protocol = typeof window !== 'undefined' && window.location.protocol === 'https:' ? 'wss:' : 'ws:';
       const host = typeof window !== 'undefined' && window.location.host ? window.location.host : '127.0.0.1:8000';
+      const envWs = import.meta.env?.VITE_WS_URL as string | undefined;
+      const baseWs = envWs ? envWs.replace(/\/+$/, '') : `${protocol}//${host}`;
       return {
         sessionId: `voice-${Date.now()}`,
-        wsStreamUrl: `${protocol}//${host}/api/v1/voice/sessions/voice-${Date.now()}/stream`,
+        wsStreamUrl: `${baseWs}/api/v1/voice/sessions/voice-${Date.now()}/stream`,
         expiresAt: new Date(Date.now() + 3600000).toISOString(),
       };
     }
