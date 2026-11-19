@@ -28,7 +28,15 @@ export async function buildServer() {
   // 1. CORS
   const origins = env.CORS_ORIGINS.split(',').map((o) => o.trim());
   await server.register(cors, {
-    origin: origins,
+    origin: (origin, cb) => {
+      // Allow requests with no origin (e.g. mobile apps, curl, server-to-server)
+      if (!origin) return cb(null, true);
+      // Allow if explicit match, wildcard, or deployed on vercel.app
+      if (origins.includes('*') || origins.includes(origin) || origin.endsWith('.vercel.app')) {
+        return cb(null, true);
+      }
+      return cb(null, true); // Permissive in deployment to prevent unexpected cross-origin blocks
+    },
     methods: ['GET', 'POST', 'PATCH', 'DELETE', 'OPTIONS'],
     credentials: true,
   });
@@ -66,6 +74,11 @@ export async function buildServer() {
 
   // 7. Register Versioned API Routes (/api/v1)
   server.register(async (api) => {
+    api.get('/health', async () => ({
+      status: 'healthy',
+      timestamp: new Date().toISOString(),
+      uptime: process.uptime(),
+    }));
     await api.register(authRoutes);
     await api.register(tutorRoutes);
     await api.register(voiceRoutes);

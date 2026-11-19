@@ -301,9 +301,11 @@ export class SahaayaApiClient {
         body: JSON.stringify({ inputLanguage, outputLanguage }),
       });
     } catch {
+      const protocol = typeof window !== 'undefined' && window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+      const host = typeof window !== 'undefined' && window.location.host ? window.location.host : '127.0.0.1:8000';
       return {
         sessionId: `voice-${Date.now()}`,
-        wsStreamUrl: `ws://127.0.0.1:8000/api/v1/voice/sessions/voice-${Date.now()}/stream`,
+        wsStreamUrl: `${protocol}//${host}/api/v1/voice/sessions/voice-${Date.now()}/stream`,
         expiresAt: new Date(Date.now() + 3600000).toISOString(),
       };
     }
