@@ -1,0 +1,37 @@
+{
+  "id": "lesson_science_friction_c8",
+  "conceptName": "Friction: Causes, Effects, and Types",
+  "gradeLevel": "Class 8",
+  "subject": "Science",
+  "board": "State Board / NCERT Aligned",
+  "sourceTitle": "SahaayaLearn Original Curricular Lesson 04",
+  "author": "SahaayaLearn Academic Team",
+  "license": "Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0)",
+  "learningObjective": "Explain how microscopic surface irregularities cause friction, distinguish static, sliding, and rolling friction, and explain why friction is a necessary evil.",
+  "prerequisites": ["Force basics", "Contact forces"],
+  "simpleExplanation": "Friction is a contact force that opposes the relative motion between two surfaces touching each other. It helps us walk without slipping, but also wears down machine parts and bicycle tires.",
+  "detailedExplanation": "Even surfaces that look completely smooth have microscopic hills and valleys (irregularities). When two surfaces slide across one another, these microscopic ridges interlock, resisting movement. Rolling friction is much smaller than sliding friction, which is why ball bearings and wheels are used in machinery.",
+  "everydayExample": "Why do bicycle brakes stop your wheel? When you squeeze the brake levers, rubber brake pads press hard against the metal wheel rim. The friction between rubber and metal converts motion into heat, bringing the cycle to a safe stop!",
+  "technicalTerminology": {
+    "English": ["Friction", "Static Friction", "Sliding Friction", "Rolling Friction", "Lubricant", "Ball Bearings"],
+    "Kannada": ["ಘರ್ಷಣೆ (Gharshane - Friction)", "ಸ್ಥಾಯಿ ಘರ್ಷಣೆ (Sthayi Gharshane)", "ಚಲನಾ ಘರ್ಷಣೆ (Chalana Gharshane)", "ಉರುಳು ಘರ್ಷಣೆ (Urulu Gharshane)", "ಲ್ಯೂಬ್ರಿಕೆಂಟ್ / ಜಿಡ್ಡುಕಾರಕ (Jiddukaraka)"],
+    "Hindi": ["घर्षण (Gharshan)", "स्थैतिक घर्षण (Sthaitik Gharshan)", "लोटनी घर्षण (Lotni Gharshan - Rolling)", "स्नेहक (Snehan - Lubricant)"]
+  },
+  "commonMisconceptions": [
+    {
+      "code": "SMOOTH_SURFACES_HAVE_NO_FRICTION",
+      "description": "Believing smooth surfaces like glass or polished stone have zero friction.",
+      "diagnosticQuestion": "Can you slide a car tyre on dry polished marble without any braking force at all?",
+      "correctionStrategy": "Explain that all physical materials have microscopic interlocking points; ultra-smooth surfaces even experience adhesive friction."
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "id": "pq_fric_01",
+      "question": "Which type of friction is the smallest in magnitude?",
+      "options": ["Static friction", "Sliding friction", "Rolling friction", "Fluid drag"],
+      "correctAnswer": "Rolling friction",
+      "explanation": "Rolling friction is significantly smaller than sliding friction because contact points lift off rather than drag."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+:root {
+  --color-midnight: #07111F;
+  --color-deep: #0B1C35;
+  --color-surface: #101F33;
+  --color-surface-card: #13253E;
+  --color-surface-elevated: #172B47;
+  --color-cyan: #24C8F4;
+  --color-blue: #3478F6;
+  --color-violet: #8275FF;
+  --color-white: #EAF7FF;
+  --color-muted: #A9B9CA;
+  --color-dim: #637A92;
+  --color-amber: #F59E0B;
+  
+  --color-light-bg: #F5F9FD;
+  --color-light-surface: #FFFFFF;
+  --color-light-card: #F0F6FC;
+  --color-light-border: #D9E6F2;
+  --color-light-text: #0D1E33;
+  --color-light-muted: #52687F;
+
+  --border-cyan-subtle: rgba(36, 200, 244, 0.18);
+  --border-glass: rgba(255, 255, 255, 0.08);
+
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Plus Jakarta Sans', 'Manrope', sans-serif;
+  --font-heading: 'Manrope', 'Plus Jakarta Sans', sans-serif;
+}

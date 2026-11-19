@@ -1,0 +1,42 @@
+[
+  {
+    "subject": "Mathematics",
+    "grade": "Class 7",
+    "concept": "Adding Fractions",
+    "misconceptionCode": "ADD_NUMERATOR_AND_DENOMINATOR",
+    "misconceptionDescription": "Learner assumes both numerators and denominators must be added together, resulting in e.g. 1/4 + 1/4 = 2/8.",
+    "diagnosticQuestion": "If you take one slice from a 4-slice pizza and another slice from the same pizza, do you get smaller slices or more slices?",
+    "correctionStrategy": "Clarify that the denominator defines the partition slice size (the unit) while the numerator counts how many slices you hold.",
+    "verificationQuestion": "If a chocolate bar has 6 equal pieces, and you eat 2 pieces in the morning and 3 pieces in the evening, what fraction of the whole bar have you eaten?"
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "Class 7",
+    "concept": "Fraction Comparison",
+    "misconceptionCode": "LARGER_DENOMINATOR_LARGER_VALUE",
+    "misconceptionDescription": "Learner applies whole number intuition to denominators, assuming 1/8 > 1/4 because 8 > 4.",
+    "diagnosticQuestion": "If you share one dosa equally among 8 friends, will each person get more or less dosa than sharing among 4 friends?",
+    "correctionStrategy": "Demonstrate inverse proportion: dividing a whole into more parts makes each part smaller.",
+    "verificationQuestion": "Would you rather have 1/2 of a cake or 1/10 of the same cake if you want the bigger piece?"
+  },
+  {
+    "subject": "Science",
+    "grade": "Class 8",
+    "concept": "Photosynthesis",
+    "misconceptionCode": "PLANTS_EAT_SOIL_DIRECTLY",
+    "misconceptionDescription": "Learner assumes plants get their food and building material directly out of dirt through roots like an animal mouth.",
+    "diagnosticQuestion": "When a tiny acorn grows into a huge 500-kilogram oak tree, does the soil around the roots lose 500 kilograms of dirt?",
+    "correctionStrategy": "Explain that roots absorb water and dissolved minerals, but the actual carbon atoms that build the plant wood and leaves come from air (carbon dioxide) via photosynthesis.",
+    "verificationQuestion": "Where does the carbon that forms the solid trunk of a giant neem tree mainly come from?"
+  },
+  {
+    "subject": "Mathematics",
+    "grade": "Class 6",
+    "concept": "Integers",
+    "misconceptionCode": "LARGER_NEGATIVE_IS_GREATER",
+    "misconceptionDescription": "Learner assumes -10 > -2 because 10 is greater than 2.",
+    "diagnosticQuestion": "If city A is at -10 degrees Celsius and city B is at -2 degrees Celsius, which city is colder?",
+    "correctionStrategy": "Use the vertical depth or number line model: values to the left on the number line are always smaller.",
+    "verificationQuestion": "Which temperature is warmer: -5 degrees or -1 degree?"
+  }
+]

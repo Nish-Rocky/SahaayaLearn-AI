@@ -1,0 +1,37 @@
+{
+  "id": "lesson_math_integers_c6",
+  "conceptName": "Integers: Positive and Negative Numbers on a Number Line",
+  "gradeLevel": "Class 6",
+  "subject": "Mathematics",
+  "board": "State Board / NCERT Aligned",
+  "sourceTitle": "SahaayaLearn Original Curricular Lesson 03",
+  "author": "SahaayaLearn Academic Team",
+  "license": "Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0)",
+  "learningObjective": "Understand negative integers as directional opposites of positive numbers and apply them on a number line.",
+  "prerequisites": ["Natural numbers", "Zero", "Number line basics"],
+  "simpleExplanation": "Integers include all positive counting numbers, zero, and their negative opposites. Negative numbers represent values below zero, like colder temperatures or debts.",
+  "detailedExplanation": "On a horizontal number line, zero sits at the center. Numbers to the right of zero are positive (+1, +2, +3...) and get larger as you move right. Numbers to the left of zero are negative (-1, -2, -3...) and get smaller as you move left. Notice that -5 is smaller than -2 because -5 is further to the left.",
+  "everydayExample": "Imagine an elevator in a Bengaluru hospital building. Ground floor is 0. 1st, 2nd, and 3rd floors are +1, +2, +3. The basement parking levels underground are -1, -2, -3. If you are at -2, you are two floors below the ground!",
+  "technicalTerminology": {
+    "English": ["Integer", "Negative Number", "Positive Number", "Number Line", "Absolute Value"],
+    "Kannada": ["ಪೂರ್ಣಾಂಕಗಳು (Poornankagalu)", "ಋಣ ಸಂಖ್ಯೆ (Runa Sankhye - Negative)", "ಧನ ಸಂಖ್ಯೆ (Dhana Sankhye - Positive)", "ಸಂಖ್ಯಾ ರೇಖೆ (Sankhya Rekhe)"],
+    "Hindi": ["पूर्णांक (Poornank)", "ऋणात्मक संख्या (Rinatmak Sankhya)", "धनात्मक संख्या (Dhanatmak Sankhya)"]
+  },
+  "commonMisconceptions": [
+    {
+      "code": "LARGER_NEGATIVE_IS_GREATER",
+      "description": "Assuming -10 is greater than -2 because 10 is greater than 2.",
+      "diagnosticQuestion": "Is owing 10 rupees to a friend better or worse than owing 2 rupees?",
+      "correctionStrategy": "Clarify that more negative means lower on the number line: -10 is colder and smaller than -2."
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "id": "pq_int_01",
+      "question": "Which integer is greater: -3 or -8?",
+      "options": ["-8", "-3", "They are equal", "Cannot be determined"],
+      "correctAnswer": "-3",
+      "explanation": "-3 is to the right of -8 on the number line, so -3 is greater than -8."
+    }
+  ]
+}
